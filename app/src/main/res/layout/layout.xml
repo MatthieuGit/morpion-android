@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/morpionImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="123dp"
+        android:layout_marginBottom="372dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@drawable/morpion"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/morpion" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="160dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="23dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.58"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/pion0"
+                android:layout_width="@string/widthButton"
+                android:layout_height="@string/heightButton"
+                android:layout_margin="1dp"
+                android:background="#c6b3c6" />
+
+            <Button
+                android:id="@+id/pion1"
+                android:layout_width="@string/widthButton"
+                android:layout_height="@string/heightButton"
+                android:background="#c6b3c6"
+                android:layout_margin="1dp"
+                />
+
+            <Button
+                android:id="@+id/pion2"
+                android:layout_width="@string/widthButton"
+                android:layout_height="@string/heightButton"
+                android:background="#c6b3c6"
+                android:layout_margin="1dp"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            >
+
+            <Button
+                android:id="@+id/pion3"
+                android:layout_width="@string/widthButton"
+                android:layout_height="@string/heightButton"
+                android:background="#c6b3c6"
+                android:layout_margin="1dp"
+                 />
+
+            <Button
+                android:id="@+id/pion4"
+                android:layout_width="@string/widthButton"
+                android:layout_height="@string/heightButton"
+                android:background="#c6b3c6"
+                android:layout_margin="1dp"
+
+                />
+
+            <Button
+                android:id="@+id/pion5"
+                android:layout_width="@string/widthButton"
+                android:layout_height="@string/heightButton"
+                android:background="#c6b3c6"
+                android:layout_margin="1dp"
+                 />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+
+            >
+
+            <Button
+                android:id="@+id/pion6"
+                android:layout_width="@string/widthButton"
+                android:layout_height="@string/heightButton"
+                android:background="#c6b3c6"
+                android:layout_margin="1dp"
+                />
+
+            <Button
+                android:id="@+id/pion7"
+                android:layout_width="@string/widthButton"
+                android:layout_height="@string/heightButton"
+                android:background="#c6b3c6"
+                />
+
+            <Button
+                android:id="@+id/pion8"
+                android:layout_width="@string/widthButton"
+                android:layout_height="@string/heightButton"
+                android:background="#c6b3c6"
+                android:layout_margin="1dp"
+                />
+        </TableRow>
+
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/gameStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="120dp"
+        android:layout_marginEnd="163dp"
+        android:layout_marginStart="163dp"
+        android:layout_marginTop="21dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/gameStatus"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
+    <Button
+        android:id="@+id/replayButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="34dp"
+        android:layout_marginEnd="116dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="34dp"
+        android:background="#00F"
+        android:gravity="center"
+        android:text="@string/gameReplayButton"
+        android:textColor="#FFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvGameStatut"
+        app:layout_constraintVertical_bias="1.0" />
+</android.support.constraint.ConstraintLayout>

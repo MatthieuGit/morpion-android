@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Morpion</string>
+    <string name="widthButton">60dp</string>
+    <string name="heightButton">60dp</string>
+    <string name="gameStatus">Joueur X c\'est à votre tour !</string>
+    <string name="gameReplayButton">Rejouer !</string>
+</resources>
